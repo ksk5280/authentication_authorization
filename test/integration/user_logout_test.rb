@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class UserLogoutTest < ActionDispatch::IntegrationTest
-  test "the truth" do
+  test "logged in user can log out" do
     user = User.create(username: "Kimiko", password: "password")
 
     visit login_path
